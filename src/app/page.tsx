@@ -1,95 +1,34 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from './page.module.css'; // Import the CSS module
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <h1>Welcome to Our Car Showroom</h1>
+        <p>We are excited to have you here! Explore our website to learn more about our vehicles, services, and the dedicated team that makes it all possible.</p>
+        <p>Whether you're looking for a reliable family car, an electric vehicle, or a luxury ride, we have something for everyone. Dive into our collection of brands below!</p>
+      </header>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      {/* Toyota Section */}
+      <section className={styles.section}>
+        <h2>Explore Toyota</h2>
+        <p>Discover our range of Toyota vehicles, known for their reliability and innovation. From the versatile Corolla to the robust Land Cruiser, Toyota offers something for everyone.</p>
+        <a href="/toyota">View Toyota Models</a>
+      </section>
+
+      {/* Tesla Section */}
+      <section className={styles.section}>
+        <h2>Discover Tesla</h2>
+        <p>Experience the future of driving with our range of Tesla electric vehicles. With cutting-edge technology and sustainability at their core, Tesla leads the way in electric mobility.</p>
+        <a href="/tesla">View Tesla Models</a>
+      </section>
+
+      {/* Honda Section */}
+      <section className={styles.section}>
+        <h2>Check Out Honda</h2>
+        <p>Honda vehicles are renowned for their performance and efficiency. Explore our selection, from the compact Fit to the spacious CR-V, and find your perfect match.</p>
+        <a href="/honda">View Honda Models</a>
+      </section>
     </div>
   );
 }

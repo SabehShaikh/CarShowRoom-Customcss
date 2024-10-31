@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import styles from "./Footer.module.css"; // Import the styles
+import styles from "./Footer.module.css"; 
 
 export default function Footer() {
   return (
@@ -38,22 +38,29 @@ export default function Footer() {
             <a
               href="https://www.facebook.com/Sabeh420/"
               className={styles.facebook}
+              target="_blank"
+
             >
               <FaFacebookF className="w-6 h-6" />
             </a>
             <a
               href="https://twitter.com/shaikh_sabeh"
               className={styles.twitter}
+              target="_blank"
+
             >
               <FaXTwitter className="w-6 h-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/sabeh-shaikh-016623245/"
               className={styles.linkedin}
+              target="_blank"
             >
               <FaLinkedinIn className="w-6 h-6" />
             </a>
-            <a href="https://github.com/SabehShaikh" className={styles.github}>
+            <a href="https://github.com/SabehShaikh" className={styles.github}
+                          target="_blank"
+>
               <FaGithub className="w-6 h-6" />
             </a>
           </div>
